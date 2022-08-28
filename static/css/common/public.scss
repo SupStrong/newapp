@@ -1,0 +1,665 @@
+// body {
+// 	max-width: 1500rpx;
+// 	margin: auto;
+// }
+// uni-tabbar.uni-tabbar-bottom, 
+// uni-tabbar.uni-tabbar-bottom .uni-tabbar, 
+// uni-tabbar.uni-tabbar-top, 
+// uni-tabbar.uni-tabbar-top .uni-tabbar {
+// 	max-width: 1500rpx !important;
+// 	width: 100%;
+// 	left: auto;
+// 	right: auto;
+// }
+page,
+page {
+	background: #F7F8FA;
+	color: #333;
+}
+
+@import url('iconfont.scss');
+@import url('iconfont1.scss');
+
+// 清除按钮默认样式
+.btn-clear {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	line-height: inherit;
+	width: max-content;
+	height: auto;
+}
+.disabled {
+	position: relative;
+	// background-color: #fafafa !important;
+}
+.disabled::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.pic-def {
+	display: flex;
+	height: auto;
+	background-size: 100%;
+	background-position: center;
+}
+.btn-clear:after {
+	border: none;
+}
+
+
+
+// 常用字体
+.G-Fsize-0 {
+	font-size: 0rpx !important;
+}
+
+.G-Fsize-8 {
+	font-size: 16rpx !important;
+}
+
+.G-Fsize-9 {
+	font-size: 18rpx !important;
+}
+
+.G-Fsize-10 {
+	font-size: 20rpx !important;
+}
+
+.G-Fsize-11 {
+	font-size: 22rpx !important;
+}
+
+.G-Fsize-12 {
+	font-size: 24rpx !important;
+}
+
+.G-Fsize-13 {
+	font-size: 26rpx !important;
+}
+
+.G-Fsize-14 {
+	font-size: 28rpx !important;
+}
+
+.G-Fsize-15 {
+	font-size: 30rpx !important;
+}
+
+.G-Fsize-16 {
+	font-size: 32rpx !important;
+}
+
+.G-Fsize-17 {
+	font-size: 34rpx !important;
+}
+
+.G-Fsize-18 {
+	font-size: 36rpx !important;
+}
+
+.G-Fsize-20 {
+	font-size: 40rpx !important;
+}
+
+.G-Fsize-22 {
+	font-size: 44rpx !important;
+}
+
+.G-Fsize-24 {
+	font-size: 48rpx !important;
+}
+
+
+// 常用字体位置
+.G-Talign-left {
+	text-align: left;
+	text-indent: 0;
+}
+
+.G-Talign-center {
+	text-align: center;
+}
+
+.G-Talign-right {
+	text-align: right;
+}
+
+// 常用颜色
+.G-color-111 {
+	color: #111;
+}
+
+.G-color-444 {
+	color: #444;
+}
+
+.G-color-555 {
+	color: #555;
+}
+
+.G-color-666 {
+	color: #666;
+}
+
+.G-color-777 {
+	color: #777;
+}
+
+.G-color-717376 {
+	color: #717376;
+}
+
+.G-color-E92323 {
+	color: #E92323;
+}
+
+.G-color-FF981F {
+	color: #FF981F
+}
+
+.G-color-35 {
+	color: #353535;
+}
+
+.G-color-E3E4E5 {
+	color: #E3E4E5;
+}
+
+.G-color-FF921E {
+	color: #FF921E;
+}
+
+.G-color-2060E5 {
+	color: #2060E5;
+}
+
+.G-color-FFAE2C {
+	color: #FFAE2C;
+}
+
+.G-color-FE1B1B {
+	color: #FE1B1B;
+}
+
+.G-color-FF9920 {
+	color: #FF9920;
+}
+
+.G-color-adc9f5 {
+	color: #ADC9F5;
+}
+
+.G-color-9f {
+	color: #9F9F9F;
+}
+
+.G-color-94 {
+	color: #949494;
+}
+
+.G-color-6299F0 {
+	color: #6299F0;
+}
+
+.G-color-0060E5 {
+	color: #0060E5;
+}
+
+.G-color-DCDCDC {
+	color: #DCDCDC;
+}
+
+.G-color-000 {
+	color: #000;
+}
+
+.G-color-a0 {
+	color: #A0A0A0;
+}
+
+.G-color-999 {
+	color: #999;
+}
+
+.G-color-e0 {
+	color: #E0E0E0;
+}
+
+.G-color-2172F6 {
+	color: #2172F6;
+}
+
+.G-color-white {
+	color: #fff !important;
+}
+
+.G-color-333 {
+	color: #333 !important;
+}
+
+.G-color-FFBD45 {
+	color: #FFBD45 !important;
+}
+
+.G-color-ffa509 {
+	color: #FFA509;
+}
+
+.G-color-9a {
+	color: #9a9a9a;
+}
+
+.G-color-ffa609 {
+	color: #FFA609 !important;
+}
+
+.G-color-ff5000 {
+	color: #FF5000 !important;
+}
+
+.G-color-77 {
+	color: #777777;
+}
+
+.G-color-FE184D {
+	color: #FE184D;
+}
+
+.G-color-f7f8fa {
+	color: #F7F8FA;
+}
+
+.G-color-ff9e3d {
+	color: #FF9E3D;
+}
+
+.G-color-A5C4FC {
+	color: #A5C4FC;
+}
+
+.G-color-a0 {
+	color: #a0a0a0;
+}
+
+.G-color-1800 {
+	color: #180000;
+}
+
+.G-color-be {
+	color: #bebebe;
+}
+
+.G-color-717376 {
+	color: #717376;
+}
+
+.G-color-7c {
+	color: #7C7C7C;
+}
+
+.G-color-6299F0 {
+	color: #6299F0;
+}
+
+.G-color-FFBD45 {
+	color: #FFBD45;
+}
+
+.G-color-0060E5 {
+	color: #0060E5 !important;
+}
+
+.G-color-FA2C19 {
+	color: #FA2C19;
+}
+
+// 常用间距
+.G-0-auto {
+	margin: 0 auto;
+}
+
+.G-Mt-2 {
+	margin-top: 4rpx;
+}
+
+.G-Mt-4 {
+	margin-top: 8rpx;
+}
+
+.G-Mt-5 {
+	margin-top: 10rpx;
+}
+
+.G-Mt-8 {
+	margin-top: 16rpx;
+}
+
+.G-Mt-10 {
+	margin-top: 20rpx;
+}
+
+.G-Mt-12 {
+	margin-top: 24rpx;
+}
+
+.G-Mt-15 {
+	margin-top: 30rpx;
+}
+
+.G-Mt-20 {
+	margin-top: 40rpx;
+}
+
+.G-Mt-25 {
+	margin-top: 50rpx !important;
+}
+
+.G-Mr-4 {
+	margin-right: 8rpx;
+}
+
+.G-Mr-5 {
+	margin-right: 10rpx;
+}
+
+.G-Mr-8 {
+	margin-right: 16rpx;
+}
+
+.G-Mr-10 {
+	margin-right: 20rpx;
+}
+
+.G-Mr-12 {
+	margin-right: 24rpx;
+}
+
+.G-Mr-15 {
+	margin-right: 30rpx;
+}
+
+.G-Mr-16 {
+	margin-right: 32rpx;
+}
+.G-Pr-16 {
+	padding-right: 32rpx;
+}
+.G-Mr-20 {
+	margin-right: 40rpx;
+}
+
+.G-Mb-4 {
+	margin-bottom: 8rpx;
+}
+
+.G-Mb-5 {
+	margin-bottom: 10rpx;
+}
+
+.G-Mb-8 {
+	margin-bottom: 16rpx;
+}
+
+.G-Mb-10 {
+	margin-bottom: 20rpx;
+}
+
+.G-Mb-12 {
+	margin-bottom: 24rpx;
+}
+
+.G-Mb-15 {
+	margin-bottom: 30rpx;
+}
+
+.G-Mb-16 {
+	margin-bottom: 32rpx;
+}
+.G-Mb-20 {
+	margin-bottom: 40rpx;
+}
+.G-Mb-50 {
+	margin-bottom: 100rpx;
+}
+.G-Ml-5 {
+	margin-left: 10rpx;
+}
+
+.G-Ml-8 {
+	margin-left: 16rpx;
+}
+
+.G-Ml-10 {
+	margin-left: 20rpx;
+}
+
+.G-Ml-12 {
+	margin-left: 24rpx;
+}
+
+.G-Ml-15 {
+	margin-left: 30rpx;
+}
+
+.G-Ml-40 {
+	margin-left: 40rpx;
+}
+
+.G-Mlr-16 {
+	margin-left: 32rpx;
+	margin-right: 32rpx;
+}
+
+.G-Mtb-16 {
+	margin-top: 32rpx;
+	margin-bottom: 32rpx;
+}
+
+.G-pd-0 {
+	padding: 0;
+}
+
+.G-Pt-12 {
+	padding-top: 24rpx;
+}
+
+.G-Pt-15 {
+	padding-top: 30rpx;
+}
+
+.G-Pl-10 {
+	padding-left: 20rpx;
+}
+
+.G-Pl-15 {
+	padding-left: 30rpx;
+}
+
+.G-Pb-8 {
+	padding-bottom: 16rpx;
+}
+
+.G-Pb-10 {
+	padding-bottom: 20rpx;
+}
+
+.G-Pt-20 {
+	padding-top: 40rpx;
+}
+
+.G-Pt-25 {
+	padding-top: 50rpx !important;
+}
+
+.G-Plr-16 {
+	padding-left: 32rpx;
+	padding-right: 32rpx;
+}
+
+// 常用背景颜色
+
+.G-bg-999 {
+	background-color: #999;
+}
+
+.G-bg-white {
+	background-color: #fff;
+}
+
+.G-bg-black {
+	background-color: black;
+}
+
+.G-bg-f6 {
+	background-color: #f6f6f6;
+}
+
+.G-bg-ccc {
+	background-color: #ccc !important;
+}
+
+.G-bg-f7f8f9 {
+	background-color: #f7f8f9;
+}
+
+.G-bg-f7f8fa {
+	background-color: #f7f8fa;
+}
+
+// 行高
+.G-lh-20 {
+	line-height: 40rpx;
+}
+
+// 行数限制
+
+.G-limit-more {
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.G-limit-one {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.G-dis-inline {
+	display: inline;
+}
+
+.G-limit-2 {
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	word-break: break-all;
+}
+
+.G-limit-3 {
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	word-break: break-all;
+}
+
+.G-more-cloum {
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.G-one-cloum {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.G-col-2 {
+	-webkit-line-clamp: 2;
+	word-break: break-all;
+}
+
+.G-lighter {
+	font-weight: 300;
+}
+
+.G-bold {
+	font-weight: 600;
+}
+
+.G-t-center {
+	text-align: center;
+}
+
+// 展示几行内容
+.G-line {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: var(--line);
+	line-clamp: var(--line);
+	-webkit-box-orient: vertical;
+}
+
+.G-line-1 {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.G-line-2 {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.G-line-3 {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.one-line {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.two-line {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.G-width-100 {
+	width: 100%;
+}

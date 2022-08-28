@@ -1,0 +1,149 @@
+// 底部安全区
+.safe-area {
+	padding-bottom: 0;
+	padding-bottom: constant(safe-area-inset-bottom) !important;
+	padding-bottom: env(safe-area-inset-bottom) !important;
+}
+
+.flex {
+	display: flex;
+}
+// 个人中心通用背景
+.wrap-user-center {
+	padding-top: 25rpx;
+	height: 100vh;
+	box-sizing: border-box;
+}
+// 普通页面通用背景
+.wrap-normal {
+	height: 100vh;
+	overflow: scroll;
+	position: relative;
+	background-color: #f7f8fa;
+	padding-left: 32rpx;
+	padding-right: 32rpx;
+	box-sizing: border-box;
+}
+// .wrap-normal::before {
+// 	width: 60%;
+// 	padding: 35% 0;
+// 	background: #ffa509;
+// 	opacity: 0.1;
+// 	filter: blur(50px);
+// 	content: '';
+// 	display: block;
+// 	position: fixed;
+// 	left: 0;
+// 	top: 0;
+// 	z-index: 1;
+// 	// z-index: -1;
+// }
+
+.wrap-normal-service {
+	height: 100vh;
+	overflow: scroll;
+	position: relative;
+	background-color: #f7f8fa;
+}
+
+.wrap-normal-def_nav {
+	min-height: calc(100vh - 88rpx);
+	background-color: #f7f8fa;
+	padding: 0 32rpx;
+}
+
+// .wrap-normal-service::before {
+// 	width: 60%;
+// 	padding: 35% 0;
+// 	background: #FFA509;
+// 	opacity: 0.1;
+// 	filter: blur(50px);
+// 	content: "";
+// 	display: block;
+// 	position: fixed;
+// 	left: 0;
+// 	top: 0;
+// 	// z-index: -1;
+// }
+
+.search-common {
+	height: 58rpx;
+	line-height: 58rpx;
+	background: #eaeaea;
+	background-image: url(@/static/image/common/search.png);
+	background-size: 30rpx;
+	background-repeat: no-repeat;
+	background-position: 30rpx center;
+	text-align: center;
+	border-radius: 29rpx;
+	font-size: 26rpx;
+	color: #999999;
+	position: relative;
+	width: 97%;
+}
+.main-content {
+	background-color: #ffffff;
+	padding: 18rpx 32rpx;
+	box-sizing: border-box;
+	margin-bottom: 20rpx;
+	position: relative;
+	z-index: 9;
+}
+// 通用内容区域
+.card-box {
+	background-color: #ffffff;
+	border-radius: 16rpx;
+}
+
+// 通用按钮
+.button-narmal {
+	width: 512rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	color: white;
+	font-size: 32rpx;
+	text-align: center;
+	background: #ffa509;
+	box-shadow: 0rem 4rpx 40rem 0rpx rgba(255, 165, 9, 0.29);
+	border-radius: 58rpx;
+	z-index: 99;
+}
+
+.button-fixed {
+	position: fixed;
+	bottom: 50rpx;
+	left: 50%;
+	margin-left: -256rpx;
+}
+
+.no-data {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	width: 376rpx;
+	height: 330rpx;
+	background-image: url('https://vue-oss.juranguanjia.com/weapp/image/wxcomponents/no-data.png');
+	background-size: 100%;
+}
+.no-data::after {
+	position: absolute;
+	content: '啊哦，您搜索的结果不存在～';
+	bottom: -48rpx;
+	width: 100%;
+	text-align: center;
+	color: #999999;
+	font-size: 24rpx;
+}
+
+.share_container {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-height: 412rpx;
+	z-index: 99;
+	background-color: #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 32rpx 32rpx 0 0;
+}

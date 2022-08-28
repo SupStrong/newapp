@@ -1,0 +1,23 @@
+// 去除输入框默认样式
+input {
+	background: none;
+}
+
+textarea {
+	background: none;
+	box-sizing: border-box;
+	padding: 0;
+}
+// 去除按钮默认样式
+// button {
+// 	margin: 0;
+// 	padding: 0;
+// 	outline: none;
+// 	border-radius: 0;
+// 	background-color: transparent;
+// 	line-height: inherit;
+// 	width: max-content;
+// }
+// button:after {
+// 	border: none;
+// }
