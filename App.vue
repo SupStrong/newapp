@@ -13,6 +13,7 @@
 			isMobile:false
 		},
 		onLaunch(e) {
+			this.init();
 			if (e.query.scene) {
 			  let scene = decodeURIComponent(e.query.scene).split('&')
 			  scene.map(item => {
@@ -30,7 +31,6 @@
 				uni.setStorageSync('supply', 1844)
 			  }
 			}
-			this.getLocalIp();
 			uni.setStorageSync('isDefault', uni.getStorageSync('supply') == 1844 ? true : false)
 		},
 		onShow: function() {
@@ -59,20 +59,38 @@
 		},
 		onHide: function() {
 		},
+		
 		methods:{
 			...mapMutations([
 				'SET_POSITION',
+				'SET_SYSTEMINFO',
 				'SET_USER_REAL_ADDRESS',
 				'SET_USER_SELECT_ADDRESS'
 			]),
-			getLocalIp() {
-				this.getLocalHost()
-			
-				getIP().then(res => {
-					let client_ip = res.data.client_ip;
-					uni.setStorageSync('local_ip', client_ip);
-				})
-			},
+			async init() {
+							let systemInfo = uni.getSystemInfoSync();
+							// rpx -> px单位比例
+							systemInfo.unitScale = (systemInfo.windowWidth / 375).toFixed(2);
+							// #ifndef H5 || MP-LARK || APP
+								systemInfo.menuButton = uni.getMenuButtonBoundingClientRect() || {};
+							// #endif
+							
+							// #ifdef H5 || MP-LARK || APP
+								systemInfo.menuButton = {	
+									top: 0,
+									left: systemInfo.windowWidth,
+									height: 36
+								};
+							// #endif
+							
+							// #ifdef H5
+							let ua = navigator.userAgent.toLowerCase();
+							let isWXWork = ua.match(/wxwork/i) == 'wxwork';
+							let isWeixin = !isWXWork && ua.match(/micromessenger/i) == 'micromessenger';
+							systemInfo.isWeixin = isWeixin;
+							// #endif
+							this.SET_SYSTEMINFO(systemInfo);
+						},
 			async getLocalHost() {
 				let that = this;
 				this.amapPlugin = new amap.AMapWX({

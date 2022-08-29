@@ -1,17 +1,24 @@
 <template>
-	<view 
-		class="swiper-box" 
-	>
-		<swiper class="swiper" :indicator-dots="false" indicator-color="#999" indicator-active-color="#fff" :autoplay="true" :interval="2000" :duration="500" :circular="true"  @change='onSlideChangeEnd'>
+	<!-- 		:style="{'backgroundImage': `url(${baseUrlImg}/home/swiper-bg.png)`}" -->
+	<view class="swiper-box">
+		<swiper
+			class="swiper"
+			:indicator-dots="false"
+			indicator-color="#999"
+			indicator-active-color="#fff"
+			:autoplay="true"
+			:interval="2000"
+			:duration="500"
+			:circular="true"
+			@change="onSlideChangeEnd"
+		>
 			<swiper-item v-for="(item, index) in data" :key="index">
-				<view class="swiper-item" @click="toDetail(item)">
-					<image class="swiper-item-img" :src="item.imgUrl" mode="widthFix"></image>
-				</view>
+				<view class="swiper-item" @click="toDetail(item)"><image class="swiper-item-img" :src="item.imgUrl" mode="widthFix"></image></view>
 			</swiper-item>
 		</swiper>
-		
+
 		<view class="dots">
-			<block v-for="(item, index) in data" :key="index"><view :class="['dot',index == isSwiperIndex ? 'active' : '']"></view></block>
+			<block v-for="(item, index) in data" :key="index"><view :class="['dot', index == isSwiperIndex ? 'active' : '']"></view></block>
 		</view>
 	</view>
 </template>
@@ -20,7 +27,7 @@ export default {
 	data() {
 		return {
 			baseUrlImg: 'https://vue-oss.juranguanjia.com/weapp/image',
-			isSwiperIndex:0
+			isSwiperIndex: 0
 		};
 	},
 	props: {
@@ -66,14 +73,14 @@ export default {
 						});
 						break;
 					case 'good':
-						if(data.type == "scheme"){
+						if (data.type == 'scheme') {
 							uni.navigateTo({
-								url: `pagesMarketing/goods/detail?id=${data.id}`
-							})
-						}else{
+								url: `/shoppingMall/espier/espier-detail?id=${data.id}`
+							});
+						} else {
 							uni.navigateTo({
 								url: `/servicePages/service/service_item?id=${data.id}`
-							})
+							});
 						}
 						break;
 					case 'article':
@@ -87,27 +94,27 @@ export default {
 						});
 						break;
 					case 'project':
-						if(data.type == 2) { // 案例方案
+						if (data.type == 2) {
+							// 案例方案
 							uni.navigateTo({
-								url: `/pagesMarketing/programme/detail?code=${data.id}`
-							})
-						} else if(data.type == 0 || data.type == 1) { // 系统/标准方案
+								url: `/shoppingMall/programme/solve?code=${data.id}`
+							});
+						} else if (data.type == 0 || data.type == 1) {
+							// 系统/标准方案
 							uni.navigateTo({
 								url: `/shoppingMall/programme/detail?code=${data.id}`
-							})
+							});
 						}
 						break;
 					case 'applet':
 						uni.navigateToMiniProgram({
-						  appId: data.appid,
-						  success(res) {
-						    
-						  }
-						})
+							appId: data.appid,	
+					 success(res) {}
+						});
 					case 'h5Page':
 						uni.navigateTo({
 							url: `/pages/common/h5Page?name=${data.name}&path=${data.path}`
-						})
+						});
 						break;
 					default:
 						uni.showToast({
@@ -118,8 +125,8 @@ export default {
 				}
 			}
 		},
-		onSlideChangeEnd: function (e) {
-			this.isSwiperIndex = e.detail.current
+		onSlideChangeEnd: function(e) {
+			this.isSwiperIndex = e.detail.current;
 		}
 	}
 };
@@ -181,7 +188,7 @@ export default {
 			width: 24rpx;
 			height: 8rpx;
 			// background: linear-gradient(270deg, #626262 0%, #333333 100%);
-			background-color: #FFFFFF;
+			background-color: #ffffff;
 			border-radius: 4rpx;
 			opacity: 1;
 		}

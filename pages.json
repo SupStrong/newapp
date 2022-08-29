@@ -6,8 +6,24 @@
 				"navigationStyle": "default",
 				"navigationBarTitleText": "首页"
 			}
+		},{
+			"path": "pages/index/poster",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText": "海报",
+				"disableScroll": true
+			}
 		}
-	],
+        ,{
+            "path" : "wxcomponents/components/scroll",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"tabBar": {
 		"color": "#333333",
 		"selectedColor": "#396ffc",

@@ -50,7 +50,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxa2c3642bf85d9592",
+        "appid" : "wxd687706e478a8c38",
         "requiredBackgroundModes" : [ "audio" ],
         "setting" : {
             "urlCheck" : false,
