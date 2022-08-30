@@ -1,5 +1,7 @@
 <template>
-	<view></view>
+	<view>
+		
+	</view>
 </template>
 
 <script>
@@ -8,6 +10,7 @@ export default {
 		return {
 		};
 	},
+	components: {},
 	methods: {}
 };
 </script>

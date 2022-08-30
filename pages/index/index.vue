@@ -6,6 +6,8 @@
 		<navigation :res="navObj" />
 		<navItem :res="navObj" />
 		<scrollItem :res="navObj" />
+		<AdvSwiper code="weapp_detail_adplaceshort" :random="true" :showTitle="false" />
+		<barItem :res="obj" />
 	</view>
 </template>
 <script>
@@ -15,6 +17,8 @@ import Platform from '@/wxcomponents/components/Platform.vue';
 import navigation from '@/wxcomponents/components/navigation.vue';
 import navItem from '@/wxcomponents/components/nav.vue';
 import scrollItem from '@/wxcomponents/components/scroll.vue';
+import AdvSwiper from '@/wxcomponents/components/advSwiper.vue';
+import barItem from '@/wxcomponents/components/bar.vue';
 
 export default {
 	data() {
@@ -63,6 +67,42 @@ export default {
 						content:'小毛驴'
 					}
 				]
+			},obj:{
+				data:[
+						{
+							base:{
+								title:'测试标题',
+								subtitle:'测副标题'
+							},
+							data:[{
+								item_id:'1',
+								title:'测试小毛驴',
+								image:'https://vue-oss.juranguanjia.com/weapp/image/home/star.png',
+								price:10
+							},{
+								item_id:'1',
+								title:'测试小毛驴',
+								image:'https://vue-oss.juranguanjia.com/weapp/image/home/star.png',
+								price:10
+							}]
+						},{
+							base:{
+								title:'测试标题',
+								subtitle:'测试标题'
+							},
+							data:[{
+								item_id:'1',
+								title:'测试小毛驴',
+								image:'https://vue-oss.juranguanjia.com/weapp/image/home/star.png',
+								price:10
+							},{
+								item_id:'1',
+								title:'测试小毛驴',
+								image:'https://vue-oss.juranguanjia.com/weapp/image/home/star.png',
+								price:10
+							}]
+						}
+					]
 			}
 		};
 	},
@@ -72,7 +112,9 @@ export default {
 		Platform,
 		navigation,
 		navItem,
-		scrollItem
+		scrollItem,
+		AdvSwiper,
+		barItem
 	}
 };
 </script>
