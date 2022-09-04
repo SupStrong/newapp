@@ -9,7 +9,7 @@
 </template>
 
 <script>
-const defaultTabList = ['/pages/index/index', '/pages/goods/index', '/pages/square/index', '/pages/example/index', '/pages/user/index'];
+const defaultTabList = ['/pages/index/index', '/pages/index/good', '/pages/index/index', '/pages/index/index', '/pages/index/index'];
 export default {
 	props: {
 		list: {
