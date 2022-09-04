@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<uni-nav-bar left-icon="back" title="慧采商城" backgroundColor="#fff" :border="false" statusBar @clickLeft="toPage('home')" />
 		商城
 		<custom-tab-bar :list="tabList" />
 	</view>
@@ -42,7 +43,24 @@ export default {
 		};
 	},
 	components: {},
-	methods: {}
+	methods: {
+		toPage() {
+			uni.switchTab({
+				url: '/pages/index/index'
+			});
+		}
+	},
+	onShow() {
+		uni.hideTabBar({
+			animation: true,
+			complete(res) {}
+		});
+	},
+	onHide() {
+		uni.showTabBar({
+			animation: true
+		});
+	}
 };
 </script>
 

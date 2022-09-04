@@ -9,7 +9,7 @@
 		},		{
 			"path": "pages/goods/goods",
 			"style": {
-				"navigationStyle": "default",
+				"navigationStyle": "custom",
 				"navigationBarTitleText": "首页"
 			}
 		},		{
