@@ -18,7 +18,7 @@
 			@touchend='removePlace'
 		  >
 			<view class='swiperview'>
-			  <view v-for="(item,index) of listData" class='title G-Fsize-14'>{{item.title}}</view>
+			  <view v-for="(item,index) of listData" :key="index" class='title G-Fsize-14'>{{item.title}}</view>
 			</view>
 			<view class='sign G-Fsize-12'>滑动换一个</view>
 		  </view>

@@ -12,7 +12,7 @@
 		<view class="card category">
 			<BaseTitle title="产品分类" />
 			<view class="main">
-				<view class="item" v-for="item in cateList" :key="item" @click="toPage('category', item)">
+				<view class="item" v-for="(item,index) in cateList" :key="index" @click="toPage('category', item)">
 					<image v-if="item.image_url" class="img" :src="item.image_url" mode="widthFix"></image>
 					{{item.category_name}}
 				</view>
