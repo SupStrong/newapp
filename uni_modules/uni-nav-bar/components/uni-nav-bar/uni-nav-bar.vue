@@ -235,7 +235,7 @@
 
 	.uni-navbar__header {
 		/* #ifndef APP-NVUE */
-		display: flex;
+		display: block;
 		align-items: center;
 		/* #endif */
 		padding: 0 10px;
