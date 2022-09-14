@@ -2,6 +2,7 @@ import App from './App'
 import store from './store/index.js'
 // #ifndef VUE3
 import Vue from 'vue'
+import './wxcomponents/goods/scss/main.css' // GOODS
 Vue.config.productionTip = false
 Vue.prototype.baseUrlImg = 'https://juran-vue.oss-cn-beijing.aliyuncs.com/weapp/image/';
 Vue.prototype.$store=store;

@@ -290,27 +290,27 @@
 				"pagePath": "pages/index/index",
 				"text": "首页",
 				"iconPath": "/static/image/tabbar/home.png",
-				"selectedIconPath": "/static/image/tabbar/home-selected.png"
+				"selectedIconPath": "/static/image/tabbar/home1.png"
 			},{
 				"pagePath": "pages/index/index",
 				"text": "美妆方案",
 				"iconPath": "/static/image/tabbar/home.png",
-				"selectedIconPath": "/static/image/tabbar/home-selected.png"
+				"selectedIconPath": "/static/image/tabbar/home1.png"
 			},{
 				"pagePath": "pagesMark/programme/detail",
 				"text": "商城",
 				"iconPath": "/static/image/tabbar/home.png",
-				"selectedIconPath": "/static/image/tabbar/home-selected.png"
+				"selectedIconPath": "/static/image/tabbar/home1.png"
 			},{
 				"pagePath": "pagesMark/programme/detail",
 				"text": "扫成分",
 				"iconPath": "/static/image/tabbar/home.png",
-				"selectedIconPath": "/static/image/tabbar/home-selected.png"
+				"selectedIconPath": "/static/image/tabbar/home1.png"
 			},{
 				"pagePath": "pages/user/index",
 				"text": "我的",
 				"iconPath": "/static/image/tabbar/goods.png",
-				"selectedIconPath": "/static/image/tabbar/goods-selected.png"
+				"selectedIconPath": "/static/image/tabbar/goods1.png"
 			}
 		]
 	},
