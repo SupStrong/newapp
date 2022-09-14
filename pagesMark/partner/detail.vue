@@ -16,25 +16,25 @@ export default {
 				{
 					pagePath: '/pages/index/index',
 					iconPath: '/static/image/tabbar/home.png',
-					selectedIconPath: '/static/image/tabbar/home-selected.png',
+					selectedIconPath: '/static/image/tabbar/home1.png',
 					text: '主页'
 				},
 				{
-					pagePath: '/pagesMarketing/goods/index?source=purchase',
-					iconPath: '/static/image/tabbar/nav.png',
-					selectedIconPath: '/static/image/tabbar/nav-selected.png',
-					text: '营销活动'
+					pagePath: '/pagesMark/partner/activity',
+					iconPath: '/static/image/tabbar/order.png',
+					selectedIconPath: '/static/image/tabbar/order1.png',
+					text: '带货活动'
 				},
 				{
-					pagePath: '/pageUserInfos/cart/index',
-					iconPath: '/static/image/tabbar/cart.png',
-					selectedIconPath: '/static/image/tabbar/cart-selected.png',
-					text: '商品活动'
+					pagePath: '/pagesMark/partner/activity',
+					iconPath: '/static/image/tabbar/goods.png',
+					selectedIconPath: '/static/image/tabbar/goods1.png',
+					text: '关联商品'
 				},
 				{
-					pagePath: '/pageUserInfos/cart/index',
-					iconPath: '/static/image/tabbar/cart.png',
-					selectedIconPath: '/static/image/tabbar/cart-selected.png',
+					pagePath: '/pagesMark/partner/activity',
+					iconPath: '/static/image/tabbar/price.png',
+					selectedIconPath: '/static/image/tabbar/price1.png',
 					text: '分佣订单'
 				}
 			]
