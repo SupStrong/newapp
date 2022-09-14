@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		赠品
 	</view>
 </template>
 

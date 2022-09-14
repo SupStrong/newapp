@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		砍一刀活动
 	</view>
 </template>
 

@@ -6,33 +6,16 @@
 				"navigationStyle": "default",
 				"navigationBarTitleText": "首页"
 			}
-		},		{
-			"path": "pages/goods/goods",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "首页"
-			}
-		},		{
-			"path": "pages/ingredient/ingredient",
+		},
+		{
+			"path": "pages/user/index",
 			"style": {
 				"navigationStyle": "default",
-				"navigationBarTitleText": "首页"
-			}
-		},		{
-			"path": "pages/programme/programme",
-			"style": {
-				"navigationStyle": "default",
-				"navigationBarTitleText": "首页"
-			}
-		},		{
-			"path": "pages/user/user",
-			"style": {
-				"navigationStyle": "default",
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "我的"
 			}
 		}
-	    ,{
-            "path" : "pagesMarketing/classify/index",
+        ,{
+            "path" : "pagesMark/goods/detail",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -41,17 +24,7 @@
             
         }
         ,{
-            "path" : "pages/newItem/index",
-            "style" :                                                                                    
-            {
-				"navigationStyle": "custom",
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/newItem/components/navTag",
+            "path" : "pagesMark/partner/detail",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -60,7 +33,7 @@
             
         }
         ,{
-            "path" : "pages/newItem/components/navCard",
+            "path" : "pagesUser/cart/index",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -69,7 +42,232 @@
             
         }
         ,{
-            "path" : "pages/newGoods/index",
+            "path" : "pagesUser/login/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/order/place",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/poster/public",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/classify/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/article/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/article/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/search/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/activity/chopknife",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/activity/makeList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/activity/gift",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/activity/timeLimit",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/activity/coupon",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/extension/poster",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/partner/activity",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/partner/goods",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/extension/article",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/extension/programme",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/partner/brokerage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/extension/theme",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/extension/brand",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/extension/classify",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/extension/component",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/ingredient/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/brand/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/brand/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pagesMark/programme/detail",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -79,18 +277,7 @@
         }
     ],
 	"subPackages": [
-		{
-			"root": "pagesMarketing/cart",
-			"pages": [
-				{
-					"path": "index",
-					"style": {
-						"navigationBarTitleText": "购物车",
-						"enablePullDownRefresh": false
-					}
-				}
-			]
-		}
+	
 	],
 	"tabBar": {
 		"color": "#333333",
@@ -106,25 +293,7 @@
 				"selectedIconPath": "/static/image/tabbar/home-selected.png"
 			},
 			{
-				"pagePath": "pages/goods/goods",
-				"text": "商城",
-				"iconPath": "/static/image/tabbar/goods.png",
-				"selectedIconPath": "/static/image/tabbar/goods-selected.png"
-			},
-			{
-				"pagePath": "pages/programme/programme",
-				"text": "方案",
-				"iconPath": "/static/image/tabbar/goods.png",
-				"selectedIconPath": "/static/image/tabbar/goods-selected.png"
-			},
-			{
-				"pagePath": "pages/ingredient/ingredient",
-				"text": "成分",
-				"iconPath": "/static/image/tabbar/goods.png",
-				"selectedIconPath": "/static/image/tabbar/goods-selected.png"
-			},
-			{
-				"pagePath": "pages/user/user",
+				"pagePath": "pages/user/index",
 				"text": "我的",
 				"iconPath": "/static/image/tabbar/goods.png",
 				"selectedIconPath": "/static/image/tabbar/goods-selected.png"

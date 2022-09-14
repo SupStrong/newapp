@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		优惠券
 	</view>
 </template>
 

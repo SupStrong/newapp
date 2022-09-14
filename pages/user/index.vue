@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		我的页面
 	</view>
 </template>
 

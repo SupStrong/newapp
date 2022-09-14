@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		分类-列表
 	</view>
 </template>
 

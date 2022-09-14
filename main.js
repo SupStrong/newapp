@@ -6,9 +6,9 @@ Vue.config.productionTip = false
 Vue.prototype.baseUrlImg = 'https://juran-vue.oss-cn-beijing.aliyuncs.com/weapp/image/';
 Vue.prototype.$store=store;
 import {router,RouterMount} from './router/index.js'
-import share from '@/mixins/share.js'
+// import share from '@/mixins/share.js'
 
-Vue.mixin(share);
+// Vue.mixin(share);
 Vue.use(router)
 App.mpType = 'app'
 const app = new Vue({

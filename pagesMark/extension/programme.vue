@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		推广活动-方案
 	</view>
 </template>
 

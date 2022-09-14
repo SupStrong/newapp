@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		获取用户信息
 	</view>
 </template>
 

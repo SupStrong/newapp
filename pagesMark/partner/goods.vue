@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		博主关联的活动
 	</view>
 </template>
 

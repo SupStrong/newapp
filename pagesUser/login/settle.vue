@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		博主入驻
 	</view>
 </template>
 

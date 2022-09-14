@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		博主详情 - 扫码进来的
 	</view>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		品牌列表
 	</view>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		方案详情
 	</view>
 </template>
 

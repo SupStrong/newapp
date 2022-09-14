@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		下单页面
 	</view>
 </template>
 

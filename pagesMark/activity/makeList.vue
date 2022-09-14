@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		拼团
 	</view>
 </template>
 

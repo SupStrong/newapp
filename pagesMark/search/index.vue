@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		搜索页面
 	</view>
 </template>
 

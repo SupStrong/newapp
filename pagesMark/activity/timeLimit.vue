@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		限时秒杀
 	</view>
 </template>
 

@@ -1,17 +1,22 @@
 <template>
-  <view>
-    文章列表
-  </view>
+	<view>
+		绑定手机号
+	</view>
 </template>
-<script>
-  export default {
-    data() {
-			return {
-			};
-		},
-    methods:{
 
-    }
-  }
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
 </script>
-<style lang="scss" scoped></style>
+
+<style>
+
+</style>

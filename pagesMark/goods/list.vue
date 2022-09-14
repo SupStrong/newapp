@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		商品列表
 	</view>
 </template>
 

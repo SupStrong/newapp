@@ -1,6 +1,6 @@
 <template>
 	<view>
-		首页
+		公共分享海报
 	</view>
 </template>
 
