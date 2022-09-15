@@ -1,28 +1,28 @@
-// 悬浮按钮
-
 <template>
-	<view class="" v-if="floatList && floatList.length">
-		<view class="cu-modal" :class="{ show: showMask }" @tap="hideMask"></view>
-		<!-- 悬浮按钮菜单 -->
-		<view class="shopro-float-btn">
-			<button class="wechat-btn u-reset-button" @tap="onBtn">
-				<image class="wechat_img" :src="floatList.length == 1 ? floatList[0].btnimage : floatData.image" mode="widthFix"></image>
-			</button>
-			<view :class="showBtnList ? 'float--active' : 'float-list-box'">
-				<view class="btn-img-box u-flex-col" @tap="onBtnItem(item)" v-for="item in floatList" :key="item.btnimage">
-					<view class="btn-item u-flex-col u-row-center u-col-center">
-						<image class="btn-img" :src="item.btnimage" mode="aspectFill"></image>
-						<view class="btn-name">{{ item.name }}</view>
+	<view class="">
+		<view class="" v-if="floatList && floatList.length">
+			<view class="cu-modal" :class="{ show: showMask }" @tap="hideMask"></view>
+			<!-- 悬浮按钮菜单 -->
+			<view class="shopro-float-btn">
+				<button class="wechat-btn u-reset-button" @tap="onBtn">
+					<image class="wechat_img" :src="listData[0].btnImg" mode="widthFix"></image>
+				</button>
+				<view :class="showBtnList ? 'float--active' : 'float-list-box'">
+					<view class="btn-img-box u-flex-col" @tap="onBtnItem(item)" v-for="item in floatList" :key="item.btnimage">
+						<view class="btn-item u-flex-col u-row-center u-col-center">
+							<image class="btn-img" :src="item.btnimage" mode="aspectFill"></image>
+							<view class="btn-name">{{ item.name }}</view>
+						</view>
 					</view>
 				</view>
 			</view>
+			<!-- 弹窗 -->
+			<!-- <view class="cu-modal" :class="{ show: showModal }" @tap="showModal = false">
+				<view class="cu-dialog" style="width: 610rpx;background: none;">
+					<view class="img-box"><image class="modal-img" :src="modalImg" mode="aspectFit" @tap="saveImage(modalImg)"></image></view>
+				</view>
+			</view> -->
 		</view>
-		<!-- 弹窗 -->
-		<!-- <view class="cu-modal" :class="{ show: showModal }" @tap="showModal = false">
-			<view class="cu-dialog" style="width: 610rpx;background: none;">
-				<view class="img-box"><image class="modal-img" :src="modalImg" mode="aspectFit" @tap="saveImage(modalImg)"></image></view>
-			</view>
-		</view> -->
 	</view>
 </template>
 
@@ -34,43 +34,39 @@
 // import { mapMutations, mapActions, mapState, mapGetters } from 'vuex';
 // import Auth from '@/shopro/permission/index.js';
 export default {
-	components: {},
-	data() {
-		return {
-			showBtnList: false, //列表弹出
-			modalImg: '', //子项图片弹出
-			showModal: false, //modal层
-			showMask: false,
-			// platform: this.$platform.get();
-			floatList: []
-           
-		};
-	},
-	props: {
-		floatData:{
-			type: Array
-		}
-	},
-	
-	watch:{
-		floatData(val){
-			debugger
-          if(val){
-			this.floatList = val.list;
-		  }
-		}
-	},
-	created() {},
-	methods: {
-	
-	// 	// 点击按钮菜单，如果悬浮按钮数据为一条，按钮图片为唯一菜单项图片和标题
-		onBtnItem(item) {
-			console.log(item);
-		
-		},
+ props: {
+  listData: {
+   type: Array,
+   default: []
+  }
+ },
+ data() {
+  return {
+   showBtnList: false, //列表弹出
+   modalImg: '', //子项图片弹出
+   showModal: false, //modal层
+   showMask: false,
+   // platform: this.$platform.get();
+   floatList: []
+  };
+ },
 
-	
-	}
+ watch: {
+  listData: {
+   handler(val) {
+    this.floatList = val[0].list;
+	console.log(val,"ssr")
+   },
+   immediate: true,
+  }
+ },
+ created() {},
+ methods: {
+  //  // 点击按钮菜单，如果悬浮按钮数据为一条，按钮图片为唯一菜单项图片和标题
+  onBtnItem(item) {
+   console.log(item);
+  }
+ }
 };
 </script>
 
