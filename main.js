@@ -8,7 +8,9 @@ Vue.prototype.baseUrlImg = 'https://juran-vue.oss-cn-beijing.aliyuncs.com/weapp/
 Vue.prototype.$store=store;
 import {router,RouterMount} from './router/index.js'
 // import share from '@/mixins/share.js'
-
+// 引入全局TuniaoUI
+import TuniaoUI from 'tuniao-ui'
+Vue.use(TuniaoUI)
 // Vue.mixin(share);
 Vue.use(router)
 App.mpType = 'app'
